@@ -4,11 +4,11 @@ float G = 0.5;
 float threshold = 1;
 int timeStep = 1;
 int N = 10000;
-int endFrame = 500;
 
 //DISPLAYS AND STATS
 float dens = 5;
 int milli = 0;
+int endFrame = 500;
 
 //BOOLEANS FOR UPDATES AND DISPLAYS
 Boolean playing = true;
