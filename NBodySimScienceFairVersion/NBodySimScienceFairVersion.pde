@@ -3,7 +3,7 @@ float sft = 75;
 float G = 0.5;
 float threshold = 1;
 int timeStep = 1;
-int n = 10000;
+int N = 10000;
 int endFrame = 500;
 //DISPLAYS AND STATS
 float dens = 5;
