@@ -5,6 +5,7 @@ float threshold = 1;
 int timeStep = 1;
 int N = 10000;
 int endFrame = 500;
+
 //DISPLAYS AND STATS
 float dens = 5;
 int milli = 0;
@@ -14,7 +15,6 @@ Boolean playing = true;
 Boolean showParticles = true;
 Boolean showParticleDirection = false;
 Boolean showQuad = false;
-Boolean showDensity = false;
 
 //QUAD AND BODY
 Body[] bodies = new Body[0];
