@@ -17,9 +17,6 @@ void keyPressed() {
   if(key == 'q' || key == 'Q') {
   showQuad = !showQuad; 
  }
-  if(key == 'd' || key == 'D') {
-  showDensity = !showDensity; 
- }
 }
 
 void update() {
@@ -44,22 +41,6 @@ void display(Boolean sP, Boolean sPD) {
  for(Body body : bodies) {
   body.display(sP, sPD); 
  }
-}
-
-void showDensity() {
- loadPixels();
- for(int x = 0; x < width; x++) {
-  for(int y = 0; y < height; y++) {
-   int index = x + y*width;
-   float sum = 0;
-   for(Body b : bodies) {
-     float dt = dist(x, y, b.pos.x, b.pos.y);
-     sum += ((dens)*b.radius)/dt;
-   }
-   pixels[index] = color(constrain(map(sum, 0, 255, 0, 46),0,255), 255, 255);
-  } 
- }
- updatePixels();
 }
 
 void printStat() {
