@@ -41,9 +41,6 @@ void draw() {
  background(0);
  fill(255);
  
- //PRINTS STATS
- //printStats();
- 
  //QUAD
  if(BarnesHut) {
   quad = new QuadTree(0, 0, width, height, 1);
