@@ -75,7 +75,7 @@ void draw() {
  } else {
   text("Particle-Particle Method", 0, 80); 
  }
- text(millis()/frameCount, 0, 90);
+ text("Average Time Between Frames: " + millis()/frameCount, 0, 90);
  
  //EXIT
  if(frameCount == endFrame) {
