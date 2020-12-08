@@ -23,12 +23,12 @@ class Body {
  }
  
  void updatePosition() {   
-   //pos = new PVector((pos.x + (velocity.x) + width)%width, (pos.y + (velocity.y) + height)%height);
-   pos.add(velocity);
-   if(pos.x > width || pos.x < 0 || pos.y > height || pos.y < 0) {
-    pos = new PVector(random(width), random(height));
-    velocity.mult(0);
-   }
+   pos = new PVector((pos.x + (velocity.x) + width)%width, (pos.y + (velocity.y) + height)%height);
+   //pos.add(velocity);
+   //if(pos.x > width || pos.x < 0 || pos.y > height || pos.y < 0) {
+   // pos = new PVector(random(width), random(height));
+   // velocity.mult(0);
+   // }
  }
  
  void display(Boolean sP, Boolean sPD) {
